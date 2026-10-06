@@ -1,0 +1,29 @@
+input[type="text"]
+{
+    width: 300px;
+    background-color: pink;
+    color: rgb(125,73,247);
+    padding: 10px;
+    margin: 10px;
+}
+
+input[type="button"]
+{
+    background-color: yellow;
+    color: green;
+    padding: 10px;
+    margin: 10px;
+}
+
+a[target=_blank]{
+    font-size: x-large;
+}
+
+input[type="email"]
+{
+    width: 200px;
+    background-color: yellowgreen;
+    color: rebeccapurple;
+    padding: 10px;
+    margin: 10px;
+}
