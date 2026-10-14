@@ -1,0 +1,51 @@
+<!-- Flex Box properties -->
+<!-- 1.display flex : flex,inline-flex -->
+<!-- 2.flex-direction : row(default), row-reverse,column,column-reverse -->
+<!-- 3.justify-content: flex-start,flex-end,center,space- -->
+<!-- 4.align-items : stretch(defult),flex-start,flex-end,center -->
+<!-- 5.flex-wrap : nowrap(default),wrap,wrap-rverse -->
+<!-- 6.gap : space between(px,em,%) flex items -->
+<!-- 7.order : integer value , default value:0 -->
+<!-- 8.flex : grow shrink basis -->
+
+<html>
+    <head> 
+        <style> 
+        .container { 
+          display: inline-flex;           /* Creates a flex container. Change values and check effects */ 
+          flex-direction: row;            /* Arranges items in a row (default). Change values and check effects */ 
+          justify-content: space-between; /* Spaces items horizontally. Change values and check effects */ 
+          align-items: center;            /* Aligns items vertically in the center. Change values and check effects */ 
+          flex-wrap: nowrap;                /* Wraps items to next line if space runs out */ 
+          gap: 15px;                      /* Adds space between items */ 
+          background-color: lightgray; 
+          padding: 15px; 
+        } 
+        .item { 
+          background-color: steelblue; 
+          color: white; 
+          padding: 20px; 
+          text-align: center; 
+          border-radius: 5px; 
+          width: 200px;         
+        } 
+        .item:nth-child(2) { 
+          order: 1;     /* This will move the item to appear after others. Change values and check effects(POSITIVE,NEGATIVE,0) */ 
+                        /*  flex: 1 1 100px;  */ 
+                        /* Remove comments from this line to check effect. flex-grow: 1, flex-shrink: 1, flex-basis: 100px */ 
+          background-color: orange; 
+        } 
+        </style> 
+        </head> 
+        <body> 
+        <div class="container"> 
+          <div class="item">Item 1</div> 
+          <div class="item">Item 2 (Order 1)</div> 
+          <div class="item">Item 3</div> 
+          <div class="item">Item 3</div>
+          <div class="item">Item 3</div>
+          <div class="item">Item 3</div>
+          <div class="item">Item 3</div>
+        </div> 
+        </body> 
+</html>

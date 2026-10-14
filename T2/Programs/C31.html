@@ -1,0 +1,52 @@
+<!-- 5.background-size : auto(default),cover,conatin,100% 100%,width height -->
+<!-- auto: image keeps its original size -->
+<!-- cover: completely cover the area(cropping if needed) -->
+<!-- contain: scales and fit inside box without cropping -->    
+
+<html>
+    <head>
+        <style>
+            .box1{
+                width: 500px;
+                height: 400px;
+                background-image: url("flower.jfif");
+                background-size: auto;
+            }
+            .box2{
+                width: 500px;
+                height: 400px;
+                background-image: url("flower.jfif");
+                background-size: cover;
+            }
+            .box3{
+                width: 500px;
+                height: 400px;
+                background-image: url("flower.jfif");
+                background-size: contain;
+            }
+            .box4{
+                width: 500px;
+                height: 400px;
+                background-image: url("flower.jfif");
+                background-size: 100% 100%;
+            }
+            .box5{
+                width: 500px;
+                height: 400px;
+                background-image: url("flower.jfif");
+                background-size: 400px 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">Auto demonstartion</div>
+        <hr>
+        <div class="box2">Cover demonstartion</div>
+        <hr>
+        <div class="box3">contain demonstartion</div>
+        <hr>
+        <div class="box4">% % demonstartion</div>
+        <hr>
+        <div class="box5">Height Width demonstartion</div>
+    </body>
+</html>

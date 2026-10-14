@@ -1,0 +1,49 @@
+<!-- Def: Design a web page that include 
+          1. a button that changes it's color on hovering(pink) & when clicked (red)
+          2. an email input field changes it's bg color & border when it gains focus 
+          3. an ordered list where 
+                I. the Second list item is styled differently
+                II. One of the list item has a class name special & 
+                    all other list items have an aqua bg color & italic
+                    font style (Except the one with special class)  -->
+
+<html>
+    <head>
+        <style>
+            button:link{
+                color:green;
+            }
+            button:hover{
+                color:blue;
+            }
+            button:active{
+                color:red;
+            }
+            input:focus{
+                border: 5px solid blue;
+                background-color: lightblue;
+            }
+            ol li:nth-child(2){
+                color:green;
+                font-weight: bolder;
+            }
+            li:not(.different){
+                background-color: aqua;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <button>Click here</button>
+        <br><br>
+        Enter Email:
+        <input type="email">
+        <br><br>
+        <ol>
+            <li>FSD</li>
+            <li>Pyhton</li>
+            <li class="different">DE</li>
+            <li>PS</li>
+        </ol>
+    </body>
+</html>

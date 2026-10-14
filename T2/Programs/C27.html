@@ -1,0 +1,61 @@
+<!-- Pseudo Element -->
+<!-- 1.::first-line
+     2.::first-letter
+     3.::before
+     4.::after
+     5.::marker : change bullets colour in list
+     6.::selection : select any area it shows changes
+Syntax: selector::pseudo element{
+            property:value }
+-->
+
+<html>
+    <head>
+        <style>
+            p::first-line{
+                color:green;
+                font-style:italic;
+                font-size:20px;
+                
+            }
+            h1::first-letter{
+                color:blue;
+                font-size: 80px;
+                font-style: inherit;
+            }
+            .p1::before{
+                color:red;
+                content:"😹😹"
+            }
+            .p1::after{
+                color:red;
+                content:url("images.jpg")
+            }
+            li::marker{
+                color:red;
+                font-size: 20px;
+            }
+            ::selection{
+                color:white;
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <p style="text-align: justify;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto eaque ratione natus consequuntur! In neque, aut voluptatum doloremque dolores tempora nam illo architecto iste vel repudiandae iure ad ratione et.
+            Voluptates et quam mollitia nesciunt? Asperiores magnam dicta reprehenderit id pariatur eligendi, labore quae necessitatibus consequuntur repellendus. Neque explicabo itaque, unde aperiam sapiente est fugit, alias commodi, quis esse velit.
+            Repudiandae quo, sint natus asperiores assumenda quos qui doloribus enim earum id ex reiciendis dolor, cupiditate laudantium. Eius, perspiciatis sequi praesentium nam eveniet illo, omnis natus reprehenderit cupiditate ut eligendi!
+            Minus dicta libero eius, molestias nesciunt cumque aspernatur doloremque deserunt nostrum quo vel impedit quia ipsum facilis veniam rem, beatae voluptatibus quod saepe, molestiae possimus consequuntur doloribus sed illum! Architecto?
+            A recusandae voluptas minima veniam praesentium nesciunt, architecto consectetur error officiis exercitationem, eum aliquid nulla minus aspernatur doloribus! Maxime iusto itaque impedit nobis explicabo minus molestias illum cupiditate quidem earum!
+        </p>
+        <h1>Hello Everyone! I'm back.</h1>
+        <h2 class="p1">Nice to meet you!</h2>
+        <ul>
+            <li>FSD</li>
+            <li>Pyhton</li>
+            <li>DE</li>
+            <li>PS</li>
+        </ul>
+    </body>
+</html>

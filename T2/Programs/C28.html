@@ -1,0 +1,52 @@
+<!-- Box-Properties -->
+<!-- 1.Margin - space outside the border
+     2.Padding - space inside the element (bet. content & border) 
+     3.Width - horizontal size (auto,length) 
+     4.height - vertical size(px,em,%)
+     5.box-sizing - how width & height will be calculated
+                    I.content-box(default case) - exclude padding & border
+                    II.border-box - include...
+     6. box-shadow - box-shadow: h-offset v-offset blur spreadcolor;
+-->
+
+<!--
+    1. box-1(content box) for below code:
+            Total width=300+20+20+4+4=348px 
+            Total height=150+20+20+4+4=198px
+    2. box-2(border box) for below code:
+            Total width=300-(20+20+4+4)=252px 
+            Total height=150-(20+20+4+4)=102px
+-->
+            
+<html>
+    <head>
+        <style>
+            .box1{
+                width: 300px;
+                height: 150px;
+                margin: 30px;
+                padding:20px;
+                border: 4px solid blue;
+                box-sizing: content-box;
+                box-shadow: 5px 5px 5px red;
+                background-color: lightyellow;
+                text-align: center;
+            }
+            .box2{
+                width: 300px;
+                height: 150px;
+                margin: 30px;
+                padding:20px;
+                border: 4px solid blue;
+                box-sizing: border-box;
+                box-shadow: 5px 5px 5px red;
+                background-color: lightyellow;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!-- Pseudo Class -->
+<!-- 1.:hover => chnages when mouse hovers
+     2.:active => chnages when mouse clicked
+     3.:focus => highlight the input field
+     4.:visited/:link => visited/unvisited
+     5.:nth-child(no.) => targets the item
+     6.:not(selector) => styles all except the given selector element -->
+<!-- The order must be this link=>visited=>hover=>active -->
+<!-- Syntax: selector:pseudo-class{
+                property:value  } -->
+
+<html>
+    <head>
+        <style>
+            a:link{ 
+                color:red;
+            }
+            a:visited{
+                color:green;
+            }
+            a:hover{
+                color:pink;
+            }
+            a:active{
+                color:blue;
+            }
+            input:focus{
+                border: 5px solid blue;
+                background-color: lightblue;
+            }
+            ul li:nth-child(3){
+                color:green;
+                font-weight: bolder;
+            }
+            p:not(.different){
+                color:purple;
+                background-color: lightpink;
+                border: 2px dotted blue;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="https://www.google.com" target="_blank">This is a Link</a>
+        <br><br>
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        <br><br>
+        <ul>
+            <li>FSD</li>
+            <li>Python</li>
+            <li>DE</li>
+        </ul>
+        <p>Hello</p>
+        <p>Everyone</p>
+        <p class="different">I'm Back!</p>
+    </body>
+</html>

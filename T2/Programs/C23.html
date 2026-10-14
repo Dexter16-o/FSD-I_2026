@@ -1,0 +1,47 @@
+<!-- CSS Borders-properties -->
+<!-- 1. border-style -->
+<!-- none, solid, dashed, dotted, double -->
+<!-- 2. border-width -->
+<!-- thin,thick,medium | length: px,em,rm -->
+<!-- 3. border-color , to use this we must have to use border-style -->
+<!-- name,hex,rgb --> 
+<!-- 4.border(shorthand) , combination of 1,2,3 properties -->
+<!-- border: 2px solid red -->
+<!-- 5. border-top -->
+<!-- border-top: 3px dashed blue -->
+<!-- 6. border-right -->
+<!-- border-right: 2px dotted green -->
+<!-- 7. border-bottom -->
+<!-- border-bottom: 1px double yellow -->
+<!-- 8. border-left -->
+<!-- border-left: 2px solid purple -->
+<!-- 9. border-radius -->
+<!-- border-radius: 10px -->
+
+<html>
+    <head>
+    </head>
+    <body>
+        <p style="border-style: double;
+                  border-color: red;
+                  border-width: 2px;">
+                  same output Without Shorthand
+        </p>
+        <p style="border: 2px double red;
+                  border-radius: 10px;">
+            same output With Shorthand
+        </p>
+        <p style="border-top: 3px dashed red;">
+            Only top border
+        </p>
+        <p style="border-bottom: 3px dashed red;">
+            Only bottom border
+        </p>
+        <p style="border-right: 3px dashed red;">
+            Only right border
+        </p>
+        <p style="border-left: 3px dashed red;">
+            Only left border
+        </p>
+    </body>
+</html>
