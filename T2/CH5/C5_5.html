@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+.container{
+        margin-top: 50px;
+        height: 500px;
+        border: 1px solid red;
+        position: relative;
+        background-color: lightpink;
+        z-index: -2;
+    }
+</style>
+</head>
+<body>
+
+<h1>The z-index Property</h1>
+<div class="container">
+  <img src="trial.jpg" width="100" height="140">
+  <p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+</div>
+
+
+</body>
+</html>

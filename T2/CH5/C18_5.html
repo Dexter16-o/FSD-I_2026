@@ -1,0 +1,35 @@
+<!-- CSS Variable -->
+<!-- 1.Global Variable: 
+     Syatax: global declaration = :root {--b: blue }
+             Use of Variable = p{ color:var(--b); } 
+     2.Local Declaration: -->
+
+<html>
+    <head>
+        <style>
+            :root{
+                --b: #1234EE;
+                --all: solid dashed double dotted;
+                --p20: 20px;
+
+            }
+            p{
+                --c:center;
+                --b:brown;
+                border-style: var(--all);
+                padding: var(--p20);
+                border-color: var(--b);
+            }
+            h1{
+                color: var(--b);
+                text-align: var(--c);
+                --fs: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo qui optio pariatur eum neque! Quisquam quo eaque laudantium nemo autem labore quod blanditiis numquam ipsam dolor porro, dolorem quasi eligendi.
+        Enim qui accusantium ducimus asperiores esse! Iusto accusantium cupiditate doloribus, nihil iste aliquid praesentium amet hic quam sapiente enim recusandae? Commodi maxime, cum atque perspiciatis vel eaque repellat nulla. Quidem.</p>
+        <h1>This is H1 text</h1>
+    </body>
+</html>

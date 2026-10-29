@@ -1,0 +1,76 @@
+<!-- CSS 2D Transform -->
+<!-- 1.translate : translate(x,y), translateX(n), translateY(n) -->
+<!-- 2.rotate : -->
+
+<html>
+    <head>
+        <style>
+            .div1{
+                height: 100px;
+                width: 100px;
+                background-color: pink;
+                border: 1px solid black;
+                padding: 10px;
+            }
+            .div2{
+                height: 100px;
+                width: 100px;
+                background-color: pink;
+                border: 1px solid black;
+                padding: 10px;
+            }
+            .div3{
+                height: 100px;
+                width: 100px;
+                background-color: pink;
+                border: 1px solid black;
+                padding: 10px;
+            }
+            
+            .div1:hover{
+                transform: translate(100px,50px);
+            }
+            .div2:hover{
+                transform: translateX(50px);
+            }
+            .div3:hover{
+                transform: translateY(50px);
+            }
+            #myDiv{
+                transform: rotate(20deg);
+            }
+            #myDiv1:hover{
+                transform: rotate(-180deg);
+            }
+            #myDiv2:hover{
+                transform: scale(0.5,0.5);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div1">
+            Moves from 
+            current 
+            position
+        </div><hr>
+        <div class="div2">
+            Moves from 
+            current 
+            position
+        </div><hr>
+        <div class="div3">
+            Moves from 
+            current 
+            position
+        </div><hr>
+        <div id="myDiv" class="div3">
+            This div element is rotated clockwise 20 degrees.
+        </div><hr>
+        <div id="myDiv1" class="div3">
+            This div element is rotated clockwise -20 degrees on hovering.
+        </div><hr>
+        <div id="myDiv2">
+            <img src="nature.jpg">
+        </div>
+    </body>
+</html>

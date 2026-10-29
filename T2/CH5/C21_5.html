@@ -1,0 +1,39 @@
+<!-- Media Query -->
+<!-- 1. Media features 
+        Width,Height
+        Orientation(landscape or portrait) 
+     2. Logical operators(keywords)
+        and,or,not,only
+     3. Media Types:
+        Screen,all(default) 
+    Syntax: @media not/only mediatype
+                and(media feature)
+                and/or(media feature)
+                {
+                    CSS here
+                }
+-->
+
+<html>
+    <head>
+        <meta name="viewport" content="width-device-width,initial scale=1.0">
+        <style>
+            body{
+                background-color: lightblue;
+            }
+            @media screen and (max-width:400px){
+                body{
+                    background-color: orange;
+                }
+            }
+            @media only screen and (min-width:400px) and (max-width:1024px){
+                body{
+                    background-color: palevioletred;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello</h1>
+    </body>
+</html>

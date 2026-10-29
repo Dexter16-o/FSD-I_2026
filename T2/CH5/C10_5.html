@@ -1,0 +1,49 @@
+<!-- 1. input field should smoothly change its background color text color and border style
+     2. the button should smoothly changed bg color text color padding and border thickness when hovered -->
+<html>
+    <head>
+        <style>
+            .input{
+                background-color: aqua;
+                color: black;
+                border: 2px solid green;
+                transition-property: backgrounnd-color,color,border;
+                transition-duration: 3s,4s,5s;
+                transition-delay: 1s;
+                transition-timing-function: ease;
+            }
+            .input:hover{
+                background-color: blue;
+                color: pink;
+                border: 5px dashed black;
+            }
+            .button{
+                background-color: aquamarine;
+                color: blue;
+                padding: 5px;
+                border-width: 10px;
+                transition-property: backgrounnd-color,color,padding,border-width;
+                transition-duration: 3s,4s,5s,6s,7s;
+                transition-delay: 1s;
+                transition-timing-function: ease;
+            }
+            .button:hover{
+                background-color: aqua;
+                color: black;
+                padding: 20px;
+                border-width: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action = "#">
+            <fieldset>
+                <legend>Form</legend>
+                <label>Name</label>
+                <input type = "text" class = input>
+                <label>Submit</label>
+                <button class = "button" value = "click here"></button>
+            </fieldset>
+        </form>
+    </body>
+</html>

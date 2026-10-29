@@ -1,0 +1,34 @@
+<!-- Write html,css code that shows a heading in blue color & center aligned when screen mode is portrait ,
+     otherwise it should display in red color & in right alignment -->
+
+<html>
+     <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+       <style>
+         h1 {
+           font-size: 2em;
+         }
+     
+         /* Portrait mode: blue and centered */
+         @media screen and (orientation: portrait) {
+           h1 {
+             color: blue;
+             text-align: center;
+           }
+         }
+     
+         /* Landscape mode: red and right-aligned */
+         @media screen and (orientation: landscape) {
+           h1 {
+             color: red;
+             text-align: right;
+           }
+         }
+       </style>
+     </head>
+     <body>
+       <h1>Responsive Heading Example</h1>
+     </body>
+     </html>
+     

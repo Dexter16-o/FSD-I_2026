@@ -1,0 +1,31 @@
+<html>
+<head>
+<style>
+    div{
+       height:100px;
+       width:100px;
+       background-color: red;
+       transition-property:width,height,background-color ; /*aane div block ma j lakhvanu*/
+       transition-duration: 3s,5s,4s;
+       transition-delay: 1s;
+       transition-timing-function: ease-in-out;
+    }
+    div:hover{
+        width:200px;
+        height: 200px;
+        background-color: cyan;
+    }
+
+    /*Transition short hand*/
+    /* div{
+        transition: width 5s ease-in 1s,
+                    height 4s ease-in 1s,
+                    background-color 3s ease-in 1s;
+    } */
+</style>
+</head>
+<body>
+    <div>Hello Guyzzz</div>
+</body>
+</html>
+

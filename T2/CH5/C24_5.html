@@ -1,0 +1,30 @@
+<!--Write html,css code that will display an image dog.png & hides an image cat.png if viewport is maximum 650px white , 
+if viewport is >650px then display cat.png & hide dog.pnj -->
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .dog {
+      display: block;
+    }
+    .cat {
+      display: none;
+    }
+
+
+    @media (min-width: 650px) {
+      .dog {
+        display: none;
+      }
+      .cat {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="Dog.jpg" alt="Dog" class="dog">
+  <img src="Cat.jpg" alt="Cat" class="cat">
+</body>
+</html>

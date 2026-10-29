@@ -1,0 +1,77 @@
+<!-- 1.Rounded Image -->
+<!-- border-radius,border-top-left-radius,
+     border-top-right-radius,border-bottom-right-radius
+     border-bottom-left-radius--->
+<!-- 2.Thumbnail Image -->
+<!-- border,padding -->
+<!-- 3.transparent image -->
+<!-- Opacity 0.0 to 1.0 -->
+<!-- 4.Responsive Image -->
+<!-- max-width,height -->
+
+<html>
+    <head>
+        <style>
+            /* rounded image */
+            #img1{
+                border: 2px solid green;
+                border-radius: 10px;
+                padding: 5px;
+                height: 200px;
+                width: 200px;
+                background-color: aqua;
+            }
+            #img2{
+                border: 2px solid green;
+                border-radius: 50%;
+                padding: 5px;
+                height: 200px;
+                width: 200px;
+                background-color: aqua;
+            }
+            #img3{
+                border: 2px solid green;
+                border-top-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                padding: 5px;
+                height: 200px;
+                width: 200px;
+                background-color: aqua;
+            }
+            /* Thumnail Image */
+            #img4{
+                border: 2px solid blue;
+                border-radius: 10px;
+                padding: 5px;
+                width: 200px;
+                height: 200px;
+                background-color: aquamarine;
+            }
+            /* Transparent Image */
+            #img5{
+                border: 2px double pink;
+                height: 300px;
+                width: 300px;
+                opacity: 0.3;
+            }
+            /* Responsove Image */
+            #img6{
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 align="center">Rounded Images</h2>
+        <img src="nature.jpg" id="img1">
+        <img src="nature.jpg" id="img2">
+        <img src="nature.jpg" id="img3"><hr>
+        <h2 align="center">Thumbnail Image</h2>
+        <img src="nature.jpg" id="img4"><hr>
+        <h2 align="center">Transparent Images</h2>
+        <img src="nature.jpg" id="img5"><hr>
+        <h2 align="center">Responsive Images</h2>
+        <img src="trial.jpg"><br><br>
+        <img src="trial.jpg" id="img6">
+    </body>
+</html>
