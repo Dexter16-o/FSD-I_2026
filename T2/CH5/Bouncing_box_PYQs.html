@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+
+        /* Box Animation */
+        .box {
+            height: 150px;
+            width: 150px;
+            background-color: orange;
+            animation-name: bounce;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+        }
+        @keyframes bounce {
+            0% {
+                transform: translateY(0px);
+            }
+            100% {
+                transform: translateY(100px);
+            }
+        }
+
+        /* Text Animation */
+        p{
+            font-size: 20px;
+            animation-name: textEffect;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes textEffect {
+            0% {
+                color: transparent;
+                transform: scale(1);
+            }
+            100% {
+                color: purple;
+                transform: scale(1.5);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS Box and Text Animation</h2>
+
+    <div class="box"></div>
+
+    <p>Welcome to CSS Animation!</p>
+
+</body>
+</html>
