@@ -1,6 +1,6 @@
 # FSD-I 2026
 
-Lecture and practical programs for **Fundamentals of Software Development I (FSD-I)**. This repository collects the HTML, CSS, and related examples completed during college lectures.
+Lecture and practical programs for **Frontend Software Development I (FSD-I)**. This repository collects the HTML, CSS, Bootstrap, and related examples completed during college lectures.
 
 ## Repository structure
 
